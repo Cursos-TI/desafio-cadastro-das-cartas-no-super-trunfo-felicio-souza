@@ -35,19 +35,19 @@ int main() {
 
     //CARTA 1
     printf("Carta 1 \n");
-    printf("Digite a letra representando o estado:");
+    printf("Digite a letra representando o estado: ");
     scanf("%s", &estado1);
     printf("Digite o código: ");
     scanf("%s", &codigo1);
-    printf("Digite o nome da cidade:");
+    printf("Digite o nome da cidade: ");
     scanf("%s", &cidade1);
-    printf("Digite a população:");
+    printf("Digite a população: ");
     scanf("%d", &populacao1);
-    printf("Digite a area:");
+    printf("Digite a area: ");
     scanf("%f", &area1);
-    printf("Digite o PIB:");
+    printf("Digite o PIB: ");
     scanf("%f", &pib1);
-    printf("Digite o numero de pontos turisticos:");
+    printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosturisticos1);
 
         //CARTA 2
