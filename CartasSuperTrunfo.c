@@ -20,6 +20,10 @@ int main() {
     float pib1;
     int pontosturisticos1;
 
+    //Foi adionado mais duas variaveis ao codigo envolendo calculos
+    float densidadePopulacional1;
+    float pibPerCapta1;
+
     //CARTA 2
 
     char estado2[20];
@@ -29,6 +33,10 @@ int main() {
     float area2;
     float pib2;
     int pontosturisticos2;
+
+    //Foi adionado mais duas variaveis ao codigo envolendo calculos
+    float densidadePopulacional2;
+    float pibPerCapta2;
 
     //Coletando informações das cartas
 
@@ -68,6 +76,13 @@ int main() {
     scanf("%d", &pontosturisticos2);
 
 
+    //Aqui será aplicado os calculos
+    densidadePopulacional1 = (float)populacao1/area1;
+    pibPerCapta1 = pib1/(float)populacao1;
+
+    densidadePopulacional2 = (float)populacao2/area2;
+    pibPerCapta2 = pib2/(float)populacao2;
+
 
     // Esta parte do codigo imprimi as informações das cartas coletadas atraves da digitação
 
@@ -78,9 +93,11 @@ int main() {
     printf("Código: %s \n", codigo1);
     printf("Nome da cidade: %s \n", cidade1);
     printf("População: %d \n", populacao1);
-    printf("Área: %f Km\n", area1);
-    printf("PIB: %f \n", pib1);
-    printf("Numeros de pontos turisticos: %d \n \n", pontosturisticos1);
+    printf("Área: %.2f km² \n", area1);
+    printf("PIB: %.2f bilhões de reais \n", pib1);
+    printf("Numeros de pontos turisticos: %d \n", pontosturisticos1);
+    printf("Dencidade Populacional: %.2f hab/km² \n", densidadePopulacional1);
+    printf("PIB per Capita: %.2f reais \n \n", pibPerCapta1);
 
 
     //CARTA 2
@@ -89,14 +106,31 @@ int main() {
     printf("Código: %s \n", codigo2);
     printf("Nome da cidade: %s \n", cidade2);
     printf("População: %d \n", populacao2);
-    printf("Área: %f Km\n", area2);
-    printf("PIB: %f \n", pib2);
+    printf("Área: %.2f km² \n", area2);
+    printf("PIB: %.2f bilhões de reais \n", pib2);
     printf("Numeros de pontos turisticos: %d \n", pontosturisticos2);
-   
+    printf("Dencidade Populacional: %.2f hab/km² \n", densidadePopulacional2);
+    printf("PIB per Capita: %.2f reais \n", pibPerCapta2);
 
 
+//Exemplos de dados de entrada para testes
 
-  
+// Estado: A
+// Código: A01
+// Cidade: Fortaleza
+// População: 2700000
+// Área: 313.8
+// PIB: 65300000000
+// Número de pontos turísticos: 30
+
+// Estado: B
+// Código: B01
+// Cidade: Salvador
+// População: 2900000
+// Área (em km²): 693.0
+// PIB: 73000000000
+// Número de pontos turísticos: 30
+
 
     return 0;
 }
